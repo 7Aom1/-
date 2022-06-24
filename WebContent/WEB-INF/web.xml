@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>LibraryManage</display-name>
+	
+	<!-- 管理员 -->
+	<servlet>
+		<servlet-name>Manager</servlet-name>
+		<servlet-class>com.manager.ManagerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Manager</servlet-name>
+		<url-pattern>/manager</url-pattern>
+	</servlet-mapping>
+	
+	<!-- ****** 完成以下配置信息 ****** -->
+	<!-- 读者信息 -->
+	<servlet>
+		<servlet-name>Reader</servlet-name>
+		<servlet-class>com.reader.ReaderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Reader</servlet-name>
+		<url-pattern>/reader</url-pattern>
+	</servlet-mapping>
+	<!-- 读者类型 -->
+	<servlet>
+		<servlet-name>ReaderType</servlet-name>
+		<servlet-class>com.readerType.ReaderTypeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReaderType</servlet-name>
+		<url-pattern>/readerType</url-pattern>
+	</servlet-mapping>
+	<!-- 图书信息 -->
+	<servlet>
+		<servlet-name>Book</servlet-name>
+		<servlet-class>com.book.BookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Book</servlet-name>
+		<url-pattern>/book</url-pattern>
+	</servlet-mapping>	
+	<!-- 图书类型 -->
+	<servlet>
+		<servlet-name>BookType</servlet-name>
+		<servlet-class>com.bookType.BookTypeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BookType</servlet-name>
+		<url-pattern>/bookType</url-pattern>
+	</servlet-mapping>	
+	<!-- 借阅信息-->
+	<servlet>
+		<servlet-name>Borrow</servlet-name>
+		<servlet-class>com.borrow.BorrowServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Borrow</servlet-name>
+		<url-pattern>/borrow</url-pattern>
+	</servlet-mapping>	
+		
+	<!-- 配置字符编码过滤器 -->
+	<filter>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<filter-class>com.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+</web-app>

@@ -1,0 +1,118 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+}
+.container{
+	width: 778px;
+	margin: 0px auto;
+}
+
+.nav{
+    height: 70px;
+    border:1px solid black;
+}
+.nav  a{
+    text-decoration: none;
+    display: block;
+    color:blue;
+}
+.nav a:hover{
+    color:#F00; 
+    background-color:#666;
+}
+.nav  > ul{
+    list-style: none;
+}
+.nav  > ul li{
+    float: left;
+    line-height: 70px;
+    margin-left: 20px;
+    color:blue;
+}
+.nav  .menu1{
+    position: absolute;
+    list-style: none;
+    top:170px;
+    left: 445px;
+    width: 100px;
+    display: none;
+    background-color: white;
+    border:1px solid blue;
+}
+.nav  .menu1 li{
+    text-align: center;
+    color: black;
+    height: 40px;
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 40px;
+    border-bottom: 1px solid black;
+    /*border:1px solid red;*/
+}
+.nav  .menu2{
+    position: absolute;
+    list-style: none;
+    top:170px;
+    left: 520px;
+    width: 100px;
+    display: none;
+    background-color: white;
+    border:1px solid blue;
+}
+.nav .menu2 li{
+    text-align: center;
+    color: black;
+    height: 40px;
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 40px;
+    border-bottom: 1px solid black;
+    /*border:1px solid red;*/
+}
+.nav .menu3{
+    position: absolute;
+    list-style: none;
+    top:170px;
+    left: 595px;
+    width: 100px;
+    display: none;
+    background-color: white;
+    border:1px solid blue;
+}
+.nav .menu3 li{
+    text-align: center;
+    color: black;
+    height: 40px;
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 40px;
+    border-bottom: 1px solid black;
+    /*border:1px solid red;*/
+}
+.nav .menu4{
+    position: absolute;
+    list-style: none;
+    top:170px;
+    left: 670px;
+    width: 100px;
+    display: none;
+    background-color: white;
+    border:1px solid blue;
+}
+.nav .menu4 li{
+    text-align: center;
+    color: black;
+    height: 40px;
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 40px;
+    border-bottom: 1px solid black;
+    /*border:1px solid red;*/
+}
+
+
